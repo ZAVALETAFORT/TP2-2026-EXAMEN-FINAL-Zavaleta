@@ -1,0 +1,39 @@
+@baseUrl = http://localhost:3000
+
+GET {{baseUrl}}/sensores
+
+###
+GET {{baseUrl}}/alertas
+
+###
+POST {{baseUrl}}/lecturas
+Content-Type: application/json
+
+{
+  "id": "SEN4A9X1",
+  "tipo": "TEMPERATURA",
+  "valor": 40,
+  "timestamp": "2026-11-23T18:30:00Z"
+}
+
+###
+POST {{baseUrl}}/lecturas
+Content-Type: application/json
+
+{
+  "id": "SEN4A9X1",
+  "tipo": "TEMPERATURA",
+  "valor": 35,
+  "timestamp": "2026-11-23T18:35:00Z"
+}
+
+###
+POST {{baseUrl}}/lecturas
+Content-Type: application/json
+
+{
+  "id": "ID",
+  "tipo": "TEMPERATURA",
+  "valor": 40,
+  "timestamp": "2026-11-23T18:40:00Z"
+}
