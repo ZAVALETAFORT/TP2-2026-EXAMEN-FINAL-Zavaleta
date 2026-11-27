@@ -1,0 +1,27 @@
+@base = http://localhost:8080/items
+
+GET {{base}}
+
+###
+POST {{base}}
+Content-Type: application/json
+
+{"name":"Ejemplo"}
+
+###
+GET {{base}}/1
+
+###
+PUT {{base}}/1
+Content-Type: application/json
+
+{"name":"Actualizado"}
+
+###
+DELETE {{base}}/1
+
+###
+POST {{base}}
+Content-Type: application/json
+
+{"name":""}
